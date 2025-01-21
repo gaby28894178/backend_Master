@@ -4,8 +4,10 @@
   "description": "��#\u0000 \u0000b\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000_\u0000M\u0000a\u0000s\u0000t\u0000e\u0000r\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "node src/server",
+		"dev": "nodemon src/server"
   },
+    
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gaby28894178/backend_Master.git"
@@ -17,5 +19,17 @@
   "bugs": {
     "url": "https://github.com/gaby28894178/backend_Master/issues"
   },
-  "homepage": "https://github.com/gaby28894178/backend_Master#readme"
+  "homepage": "https://github.com/gaby28894178/backend_Master#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
