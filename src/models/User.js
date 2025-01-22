@@ -1,4 +1,4 @@
-const { DataTypes } = require('sequelize'); // Corrige el nombre de DataTpes a DataTypes
+const { DataTypes } = require('sequelize'); // Corrige el nombre de DataTypes
 const sequelize = require('../utils/connection'); // Importa la instancia de conexión configurada
 
 // Define el modelo `User`
@@ -21,22 +21,18 @@ const User = sequelize.define('user', {
         type: DataTypes.STRING, // Tipo STRING para texto
         allowNull: false // No permite valores nulos
     },
-    dni:{
+    dni: {
         type: DataTypes.STRING,
-        allowNull:false
+        allowNull: false // No permite valores nulos
     }
-}, 
-{
+}, {
     indexes: [
         {
             unique: true,
-            fields: ['dni', 'email','nombre']
+            fields: ['dni', 'email', 'nombre'] // Se asegura de que la combinación de estos campos sea única
         }
-    ]
-        
-},
-{
-    timestamps: false // Opciones del modelo, desactiva los campos automáticos createdAt y updatedAt
+    ],
+    timestamps: false // Desactiva los campos automáticos createdAt y updatedAt
 });
 
 // Exporta el modelo para su uso en otras partes de la aplicación
