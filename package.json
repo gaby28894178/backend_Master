@@ -1,6 +1,6 @@
 {
   "name": "gaby-pack",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Backend Master project",
   "main": "index.js",
   "scripts": {
@@ -33,9 +33,6 @@
     "nodemon": "^3.1.9"
   },
   "bin": {
-    "npx gaby-pack":" ./bin.js"
+    "gaby-pack": "./bin.js"
   }
 }
-
-
-
