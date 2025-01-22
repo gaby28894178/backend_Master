@@ -33,7 +33,7 @@
     "nodemon": "^3.1.9"
   },
   "bin": {
-    "gabi-pack":" ./bin.js"
+    "gaby-pack":" ./bin.js"
   }
 }
 
