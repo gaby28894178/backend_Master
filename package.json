@@ -1,13 +1,12 @@
 {
   "name": "ssl",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000b\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000_\u0000M\u0000a\u0000s\u0000t\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "description": "Backend Master project",
   "main": "index.js",
   "scripts": {
-     "start": "node src/server",
-		"dev": "nodemon src/server"
+    "start": "node src/server",
+    "dev": "nodemon src/server"
   },
-    
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gaby28894178/backend_Master.git"
@@ -27,9 +26,16 @@
     "helmet": "^8.0.0",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.37.5"
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
+  },
+  "bin": {
+    "gabi-pack":" ./bin.js"
   }
 }
+
+
+
