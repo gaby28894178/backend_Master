@@ -24,7 +24,11 @@ const User = sequelize.define('user', {
     dni: {
         type: DataTypes.STRING,
         allowNull: false // No permite valores nulos
-    }
+    },
+    imagen_Url:{
+        type: DataTypes.STRING,
+        allowNull:true
+    },
 }, {
     indexes: [
         {
